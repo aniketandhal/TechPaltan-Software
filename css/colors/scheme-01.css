@@ -1,0 +1,34 @@
+/* :root {
+  --primary-color: #4786ee;
+  --primary-color-rgb: 71, 134, 238;
+  --secondary-color: #FF7851;
+  --secondary-color-rgb: 255, 120, 81;
+  --tertiary-color: #8559E6;
+  --tertiary-color-rgb: 133, 89, 230;
+} */
+
+
+:root {
+
+  /* Clean Corporate Theme */
+  --primary-color: #2E7DB8;
+  --primary-color-rgb: 46, 125, 184;
+
+  --secondary-color: #1F2937;
+  --secondary-color-rgb: 31, 41, 55;
+
+  --tertiary-color: #9db498;
+  --tertiary-color-rgb: 243, 244, 246;
+
+  /* Supporting */
+  --heading-color: #111827;
+  --text-color: #6B7280;
+  --border-color: #E5E7EB;
+  --white-color: #ffffff;
+
+  /* Premium Gradients */
+  --primary-gradient: linear-gradient(135deg, #2E7DB8 0%, #2563EB 100%);
+
+  /* Soft Shadows */
+  --shadow-color: rgba(0, 0, 0, 0.08);
+} better colors that this we can use logo color but cant ver power these okk 
