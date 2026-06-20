@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Techpaltan - Custom ERP Solutions | Web & Mobile App Development</title>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Techpaltan - Empowering businesses with Custom ERP Solutions, Web Development, and Mobile Applications." name="description">
+    <meta content="Software Development, ERP, Mobile Apps, Web Development, Techpaltan" name="keywords">
+    <meta content="Techpaltan" name="author">
+    
+    <!-- CSS Files ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+    <!-- Embedded Techpaltan Brand Styles -->
+    <style>
+        :root {
+            --tp-navy: #1C2331;
+            --tp-orange: #D96D25;
+            --tp-blue-light: #40B4E5;
+            --tp-blue-dark: #1363A6;
+            --tp-text-gray: #5a6268;
+            --tp-bg-light: #f8f9fb;
+        }
+
+        /* General Typography & Accents */
+        .tp-subtitle {
+            color: var(--tp-orange);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .tp-heading {
+            color: var(--tp-navy);
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        /* Checkmark List */
+        .ul-check-custom {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ul-check-custom li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            color: var(--tp-navy);
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .ul-check-custom li::before {
+            content: "\f00c";
+            font-family: "FontAwesome", sans-serif;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #fff;
+            background: linear-gradient(135deg, var(--tp-blue-light), var(--tp-blue-dark));
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.7rem;
+        }
+
+        /* Process Steps */
+        .tp-step-icon {
+            color: var(--tp-orange);
+            margin-bottom: 15px;
+        }
+
+        /* Values Section */
+        .tp-modern-values {
+            background: var(--tp-bg-light);
+            position: relative;
+        }
+
+        .vision-card, .mission-card {
+            position: relative;
+            height: 100%;
+            min-height: 420px;
+            background: #ffffff;
+            border-radius: 34px;
+            padding: 60px;
+            overflow: hidden;
+            transition: all .45s ease;
+            border: 1px solid rgba(0,0,0,.05);
+            box-shadow: 0 20px 50px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.8);
+        }
+
+        .vision-card:hover, .mission-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 35px 70px rgba(28, 35, 49, 0.08);
+        }
+
+        .number-text {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            font-size: 110px;
+            font-weight: 800;
+            line-height: 1;
+            color: rgba(28, 35, 49, 0.04);
+            user-select: none;
+        }
+
+        .mini-label {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: var(--tp-orange);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .bottom-line {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--tp-navy), var(--tp-blue-light), transparent);
+        }
+
+        .image-stack {
+            position: relative;
+            height: 100%;
+            min-height: 420px;
+            overflow: hidden;
+            border-radius: 34px;
+            box-shadow: 0 20px 60px rgba(0,0,0,.08);
+        }
+
+        .image-stack img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .7s ease;
+        }
+
+        .image-stack:hover img {
+            transform: scale(1.08);
+        }
+
+        .image-badge {
+            position: absolute;
+            left: 25px;
+            bottom: 25px;
+            z-index: 3;
+            padding: 14px 18px;
+            border-radius: 18px;
+            background: rgba(28, 35, 49, 0.85);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255,255,255,.1);
+        }
+
+        .image-badge span {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        /* Footer Settings */
+        .tp-footer {
+            background-color: var(--tp-navy);
+            color: #d1d5db;
+            padding-top: 80px;
+        }
+        .tp-footer a { color: #a1a1aa; text-decoration: none; transition: 0.3s; }
+        .tp-footer a:hover { color: var(--tp-blue-light); }
+        .tp-subfooter {
+            background-color: #151a25;
+            padding: 25px 0;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+        
+        <div id="de-loader"></div>
+
+        <!-- header begin -->
+        <header class="transparent header-light header-float">
+            <div class="container-float">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <!-- Updated to Techpaltan Logo -->
+                                            <img class="logo-main" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                            <img class="logo-scroll" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                            <img class="logo-mobile" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a></li>
+                                        <li><a class="menu-item" href="about.html">About Us</a></li>
+                                        <li>
+                                            <a class="menu-item" href="solutions.html">Solutions</a>
+                                            <ul>
+                                                <li><a class="menu-item" href="solutions.html">All Solutions</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=erp">Custom ERP Systems</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=web">Web Applications</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=mobile">Mobile Apps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="menu_side_area">
+                                        <!-- Updated Button -->
+                                        <a class="btn-main fx-slide" href="contact.html" style="background: var(--tp-orange); border-color: var(--tp-orange);">
+                                            <span>Get a Proposal</span>
+                                        </a>
+                                        <span id="menu-btn"></span>
+                                    </div>
+
+                                    <div id="btn-extra" class="img">
+                                        <img src="images/ui/dots.svg" class="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+            
+            <!-- section begin -->
+            <section id="subheader" class="jarallax relative">
+                <!-- Swapped Background to a modern Tech/Office Image -->
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="jarallax-img" alt="Techpaltan Office">
+                
+                <!-- Dark Overlay for Readability -->
+                <div style="position: absolute; inset: 0; background: rgba(28, 35, 49, 0.7);"></div>
+
+                <div class="container relative z-2">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6 pt-5 pb-5">
+                            <div class="clearfix"></div>
+                            <h1 class="wow fadeInUp" data-wow-delay=".4s" style="color: rgb(255, 255, 255) !important;">About Us</h1>
+                            <div class="crumb-wrapper">
+                                <ul class="crumb wow fadeInUp" data-wow-delay=".8s">
+                                    <li><a href="index.html" style="color: whitesmoke !important;">Home</a></li>
+                                    <li class="active" style="color: var(--tp-orange) !important;">About Us</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- About Section -->
+            <section class="overflow-hidden rounded-1 mx-4" style="background-color: #ffffff; padding: 80px 0;">
+                <div class="container relative z-2">
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-lg-6">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="w-100 img-fluid rounded-3 shadow-lg"
+                                alt="Techpaltan Development Team"
+                                data-0="transform: translateY(100px);"
+                                data-1500="transform: translateY(0px);">
+                        </div>
+
+                        <div class="col-lg-6 ps-lg-5">
+                            <div class="tp-subtitle wow fadeInUp">
+                                About Techpaltan
+                            </div>
+
+                            <h2 class="tp-heading wow fadeInUp mb-4">
+                                Driving Digital Transformation with Custom Software Solutions
+                            </h2>
+
+                            <p class="wow fadeInUp mb-4" style="color: var(--tp-text-gray); font-size: 1.1rem; line-height: 1.7;">
+                                Techpaltan delivers reliable, scalable, and innovative digital solutions for businesses worldwide. From robust enterprise systems to engaging web and mobile experiences, we empower modern industries to achieve their growth objectives.
+                            </p>
+
+                            <ul class="ul-check-custom">
+                                <li class="wow fadeInUp" data-wow-delay=".2s">
+                                    Scalable ERP applications to streamline and automate business workflows
+                                </li>
+                                <li class="wow fadeInUp" data-wow-delay=".4s">
+                                    High-performance, responsive websites and dynamic web portals
+                                </li>
+                                <li class="wow fadeInUp" data-wow-delay=".6s">
+                                    Native and cross-platform mobile app development tailored for growth
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Capabilities Section -->
+            <section class="overflow-hidden rounded-1 mx-4 py-5" style="background: var(--tp-bg-light);">
+                <div class="container relative z-2">
+
+                    <!-- Section Heading -->
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb-5">
+                            <div class="tp-subtitle wow fadeInUp">Our Expertise</div>
+                            <h2 class="tp-heading wow fadeInUp">
+                                What We Deliver
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="row g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="bg-white p-40 h-100 rounded-3 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div class="relative wow fadeInUp">
+                                    <i class="fa fa-server fa-2x mb-3" style="color: var(--tp-orange);"></i>
+                                    <h4 style="color: var(--tp-navy); font-weight: 700;">Custom ERP Systems</h4>
+                                    <p class="mb-0 text-secondary">
+                                        Tailored Enterprise Resource Planning solutions built to unify your data, automate workflows, and scale with your organizational growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="bg-white p-40 h-100 rounded-3 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div class="relative wow fadeInUp" data-wow-delay=".1s">
+                                    <i class="fa fa-laptop-code fa-2x mb-3" style="color: var(--tp-blue-light);"></i>
+                                    <h4 style="color: var(--tp-navy); font-weight: 700;">Web Applications</h4>
+                                    <p class="mb-0 text-secondary">
+                                        High-speed, secure, and responsive web portals and SaaS platforms engineered with modern frontend and backend frameworks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="bg-white p-40 h-100 rounded-3 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div class="relative wow fadeInUp" data-wow-delay=".2s">
+                                    <i class="fa fa-mobile-alt fa-2x mb-3" style="color: var(--tp-blue-dark);"></i>
+                                    <h4 style="color: var(--tp-navy); font-weight: 700;">Mobile App Development</h4>
+                                    <p class="mb-0 text-secondary">
+                                        Engaging native (iOS/Android) and cross-platform mobile experiences focused on performance, UI/UX, and user retention.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="bg-white p-40 h-100 rounded-3 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div class="relative wow fadeInUp" data-wow-delay=".3s">
+                                    <i class="fa fa-cloud fa-2x mb-3" style="color: var(--tp-orange);"></i>
+                                    <h4 style="color: var(--tp-navy); font-weight: 700;">Cloud Infrastructure</h4>
+                                    <p class="mb-0 text-secondary">
+                                        Secure cloud architecture setup, migration, and management ensuring your applications remain highly available and fault-tolerant.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="bg-white p-40 h-100 rounded-3 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div class="relative wow fadeInUp" data-wow-delay=".4s">
+                                    <i class="fa fa-paint-brush fa-2x mb-3" style="color: var(--tp-blue-light);"></i>
+                                    <h4 style="color: var(--tp-navy); font-weight: 700;">UI/UX Design</h4>
+                                    <p class="mb-0 text-secondary">
+                                        Intuitive, user-centric interfaces designed to increase engagement, reduce friction, and perfectly align with your brand identity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="bg-white p-40 h-100 rounded-3 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div class="relative wow fadeInUp" data-wow-delay=".5s">
+                                    <i class="fa fa-chart-line fa-2x mb-3" style="color: var(--tp-blue-dark);"></i>
+                                    <h4 style="color: var(--tp-navy); font-weight: 700;">IT Consulting</h4>
+                                    <p class="mb-0 text-secondary">
+                                        Strategic guidance on digital transformation, technology stack selection, and process optimization for your enterprise.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Development Process Section -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb-5">
+                            <div class="tp-subtitle wow fadeInUp">How We Work</div>
+                            <h2 class="tp-heading wow fadeInUp">
+                                Our Development Process
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- Step 1 -->
+                        <div class="col-6 col-md-3 de-step de-step-arrow wow fadeInRight" data-wow-delay=".2s">
+                            <div class="tp-step-icon">
+                                <i class="fas fa-search fa-3x"></i>
+                            </div>
+                            <h4 class="fw-bold" style="color: var(--tp-navy);">Discovery</h4>
+                            <p class="text-secondary">
+                                We analyze your business requirements, technical scope, and project objectives to build a clear roadmap.
+                            </p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="col-6 col-md-3 de-step de-step-arrow wow fadeInRight" data-wow-delay=".4s">
+                            <div class="tp-step-icon">
+                                <i class="fas fa-sitemap fa-3x"></i>
+                            </div>
+                            <h4 class="fw-bold" style="color: var(--tp-navy);">Architecture</h4>
+                            <p class="text-secondary">
+                                Creating intuitive UI/UX wireframes and designing robust database and system architectures.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="col-6 col-md-3 de-step de-step-arrow wow fadeInRight" data-wow-delay=".6s">
+                            <div class="tp-step-icon">
+                                <i class="fas fa-code fa-3x"></i>
+                            </div>
+                            <h4 class="fw-bold" style="color: var(--tp-navy);">Development</h4>
+                            <p class="text-secondary">
+                                Agile sprints of coding and continuous testing ensure functional, secure, and bug-free software delivery.
+                            </p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="col-6 col-md-3 de-step wow fadeInRight" data-wow-delay=".8s">
+                            <div class="tp-step-icon">
+                                <i class="fas fa-rocket fa-3x"></i>
+                            </div>
+                            <h4 class="fw-bold" style="color: var(--tp-navy);">Deployment</h4>
+                            <p class="text-secondary">
+                                Smooth cloud deployment, team training, and ongoing post-launch maintenance and support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modern Values Section -->
+            <section class="tp-modern-values py-5">
+                <!-- Floating Background Elements -->
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+
+                <div class="container position-relative z-2">
+                    <div class="row g-4 align-items-stretch">
+
+                        <!-- Left Large Vision Card -->
+                        <div class="col-lg-7">
+                            <div class="vision-card wow fadeInUp">
+                                <div class="number-text">01</div>
+                                <div class="content-area">
+                                    <span class="mini-label">Our Vision</span>
+                                    <h3 style="color: var(--tp-navy);">
+                                        Building the Digital Ecosystems of Tomorrow
+                                    </h3>
+                                    <p>
+                                        Techpaltan aims to be a globally recognized leader in software innovation. We envision a future where businesses of all sizes can seamlessly leverage cutting-edge technology, AI, and scalable cloud solutions to drive unprecedented growth.
+                                    </p>
+                                </div>
+                                <div class="bottom-line"></div>
+                            </div>
+                        </div>
+
+                        <!-- Right Image -->
+                        <div class="col-lg-5">
+                            <div class="image-stack wow fadeInUp" data-wow-delay=".2s">
+                                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Innovation">
+                                <div class="image-badge" style="background: var(--tp-orange); border:none;">
+                                    <span>Future-Ready Tech</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left Image -->
+                        <div class="col-lg-5">
+                            <div class="image-stack wow fadeInUp" data-wow-delay=".3s">
+                                <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Collaboration">
+                                <div class="image-badge">
+                                    <span>Agile Methodology</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Mission Card -->
+                        <div class="col-lg-7">
+                            <div class="mission-card wow fadeInUp" data-wow-delay=".4s">
+                                <div class="number-text">02</div>
+                                <div class="content-area">
+                                    <span class="mini-label">Our Mission</span>
+                                    <h3 style="color: var(--tp-navy);">
+                                        Deliver High-Performance Solutions with Unmatched Quality
+                                    </h3>
+                                    <p>
+                                        We focus on helping enterprises, startups, and organizations improve operational efficiency by providing robust ERP systems, secure web platforms, and flawless mobile applications backed by reliable customer support.
+                                    </p>
+                                </div>
+                                <div class="bottom-line"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer class="tp-footer">
+            <div class="container">
+                <div class="row gx-5">
+
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                        <img src="images/logo.png" alt="Techpaltan Logo" style="max-width: 220px; background: #fff; padding: 10px; border-radius: 8px;">
+                        
+                        <div class="spacer-20" style="height: 20px;"></div>
+
+                        <p style="color: #a1a1aa; line-height: 1.8;">
+                            Empowering businesses with custom software solutions, scalable ERP systems, and high-performance mobile and web applications tailored for modern digital growth.
+                        </p>
+
+                        <div class="tp-social-icons mb-sm-30" style="display: flex; gap: 10px;">
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Explore + Company Links -->
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5 style="color: #fff; font-weight: 700; margin-bottom: 25px; border-bottom: 2px solid var(--tp-orange); display: inline-block; padding-bottom: 5px;">Explore</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="solutions.html">Our Solutions</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="portfolio.html">Case Studies</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5 style="color: #fff; font-weight: 700; margin-bottom: 25px; border-bottom: 2px solid var(--tp-orange); display: inline-block; padding-bottom: 5px;">Company</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 12px;"><a href="#">Privacy Policy</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">Terms of Service</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">Careers</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">IT Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-envelope me-2" style="color: var(--tp-blue-light);"></i>Email
+                            </div>
+                            <div class="mb-4" style="color: #a1a1aa;">info@techpaltan.com</div>
+
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-phone me-2" style="color: var(--tp-blue-light);"></i>Phone
+                            </div>
+                            <div class="mb-4" style="color: #a1a1aa;">+91 98220 95950</div>
+
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-location-pin me-2" style="color: var(--tp-blue-light);"></i>Location
+                            </div>
+                            <div style="color: #a1a1aa; line-height: 1.6;">
+                                Techpaltan HQ, IT Park,<br>
+                                Chhatrapati Sambhajinagar,<br> 
+                                Maharashtra, India - 431001
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Subfooter -->
+            <div class="tp-subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex" style="display: flex; justify-content: space-between; align-items: center; color: #8892a0; font-size: 0.9rem;">
+                                <div class="de-flex-col">
+                                    © 2026 Techpaltan. All rights reserved.
+                                </div>
+                                <div class="de-flex-col">
+                                    Designed & Developed by Techpaltan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- overlay content begin (Sidebar Menu) -->
+    <div id="extra-wrap">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="extra-content">
+            <img src="images/logo.png" class="w-150px mb-3" alt="Techpaltan Logo" style="background: #fff; padding: 5px; border-radius: 4px;">
+
+            <div class="spacer-30-line"></div>
+
+            <h5 class="mb-3" style="color: var(--tp-navy);">Our Solutions</h5>
+            
+            <ul class="ul-check-custom">
+                <li><a href="solutions.html" style="color: inherit; text-decoration: none;">Custom ERP Development</a></li>
+                <li><a href="solutions.html" style="color: inherit; text-decoration: none;">Web Applications</a></li>
+                <li><a href="solutions.html" style="color: inherit; text-decoration: none;">Mobile App Development</a></li>
+                <li><a href="solutions.html" style="color: inherit; text-decoration: none;">Cloud Infrastructure</a></li>
+                <li><a href="solutions.html" style="color: inherit; text-decoration: none;">IT Strategy & Consulting</a></li>
+            </ul>
+
+            <div class="spacer-30-line"></div>
+
+            <h5 style="color: var(--tp-navy);">Contact Us</h5>
+            <div style="color: var(--tp-text-gray);"><i class="icofont-clock-time me-2" style="color: var(--tp-orange);"></i>Monday - Saturday 09.00 - 18.00</div>
+            <div style="color: var(--tp-text-gray); margin-top: 8px;"><i class="icofont-location-pin me-2" style="color: var(--tp-orange);"></i>IT Park, Chhatrapati Sambhajinagar</div>
+            <div style="color: var(--tp-text-gray); margin-top: 8px;"><i class="icofont-envelope me-2" style="color: var(--tp-orange);"></i>info@techpaltan.com</div>    
+
+            <div class="spacer-30-line"></div>
+
+            <h5 style="color: var(--tp-navy);">About Us</h5>
+            <p style="color: var(--tp-text-gray);">
+                Techpaltan is your trusted technology partner, delivering scalable, future-ready enterprise software and digital experiences that drive real business growth.
+            </p>
+
+            <div class="social-icons mt-3">
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- overlay content end -->
+
+    <!-- Javascript Files ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/custom-marquee.js"></script>
+   
+</body>
+</html>

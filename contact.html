@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us - Techpaltan | Custom ERP & Software Solutions</title>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Contact Techpaltan for Custom ERP Solutions, Web Development, and Mobile Applications." name="description">
+    <meta content="Software Development, ERP, Mobile Apps, Web Development, Contact Techpaltan" name="keywords">
+    <meta content="Techpaltan" name="author">
+    
+    <!-- CSS Files ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+    <!-- Embedded Techpaltan Brand Styles -->
+    <style>
+        :root {
+            --tp-navy: #1C2331;
+            --tp-orange: #D96D25;
+            --tp-blue-light: #40B4E5;
+            --tp-blue-dark: #1363A6;
+            --tp-text-gray: #5a6268;
+            --tp-bg-light: #f8f9fb;
+        }
+
+        /* General Typography & Accents */
+        .tp-subtitle {
+            color: var(--tp-orange);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .tp-heading {
+            color: var(--tp-navy);
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        /* Checkmark List */
+        .ul-check-custom {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ul-check-custom li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            color: var(--tp-navy);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: color 0.3s;
+        }
+
+        .ul-check-custom li a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .ul-check-custom li a:hover {
+            color: var(--tp-orange);
+        }
+
+        .ul-check-custom li::before {
+            content: "\f00c";
+            font-family: "FontAwesome", sans-serif;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #fff;
+            background: linear-gradient(135deg, var(--tp-blue-light), var(--tp-blue-dark));
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.7rem;
+        }
+
+        /* Contact Page Specific Styles */
+        .tp-contact-icon-box {
+            background: linear-gradient(135deg, var(--tp-orange), #ff8a45);
+            color: #fff !important;
+            box-shadow: 0 10px 20px rgba(217, 109, 37, 0.2);
+        }
+
+        .tp-btn-submit {
+            background: var(--tp-navy);
+            color: #fff;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .tp-btn-submit:hover {
+            background: var(--tp-orange);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(217, 109, 37, 0.3);
+        }
+
+        /* Footer Settings */
+        .tp-footer {
+            background-color: var(--tp-navy);
+            color: #d1d5db;
+            padding-top: 80px;
+        }
+        .tp-footer h5 {
+            color: #ffffff !important;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--tp-orange);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .tp-footer a { color: #a1a1aa; text-decoration: none; transition: 0.3s; }
+        .tp-footer a:hover { color: var(--tp-blue-light); }
+        .tp-subfooter {
+            background-color: #151a25;
+            padding: 25px 0;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent header-light header-float">
+            <div class="container-float">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <!-- Updated to Techpaltan Logo -->
+                                            <img class="logo-main" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                            <img class="logo-scroll" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                            <img class="logo-mobile" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a></li>
+                                        <li><a class="menu-item" href="about.html">About Us</a></li>
+                                        <li>
+                                            <a class="menu-item" href="solutions.html">Solutions</a>
+                                            <ul>
+                                                <li><a class="menu-item" href="solutions.html">All Solutions</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=erp">Custom ERP Systems</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=web">Web Applications</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=mobile">Mobile Apps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="menu_side_area">
+                                        <a class="btn-main fx-slide" href="contact.html" style="background: var(--tp-orange); border-color: var(--tp-orange);">
+                                            <span>Get a Proposal</span>
+                                        </a>
+                                        <span id="menu-btn"></span>
+                                    </div>
+
+                                    <div id="btn-extra" class="img">
+                                        <img src="images/ui/dots.svg" class="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+            
+            <!-- section begin -->
+            <section id="subheader" class="jarallax relative">
+                <!-- Tech / Communication Background -->
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="jarallax-img" alt="Contact Techpaltan">
+                
+                <!-- Dark Overlay -->
+                <div style="position: absolute; inset: 0; background: rgba(28, 35, 49, 0.75);"></div>
+
+                <div class="container relative z-2">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6 pt-5 pb-5">
+                            <div class="clearfix"></div>
+                            <h1 class="wow fadeInUp" data-wow-delay=".4s" style="color: rgb(255, 255, 255) !important;">Contact Us</h1>
+                            <div class="crumb-wrapper">
+                                <ul class="crumb wow fadeInUp" data-wow-delay=".8s">
+                                    <li><a href="index.html" style="color: whitesmoke !important;">Home</a></li>
+                                    <li class="active" style="color: var(--tp-orange) !important;">Contact Us</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- Contact Info & Form Section -->
+            <section class="relative" style="background: #ffffff; padding: 80px 0;">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center g-5">
+                        <div class="col-lg-5">
+                            <div class="tp-subtitle wow fadeInUp">Get in Touch</div>
+                            <h2 class="tp-heading wow fadeInUp mb-4">Ready to Start Your Digital Transformation?</h2>
+
+                            <p class="mb-5 wow fadeInUp" style="color: var(--tp-text-gray); font-size: 1.1rem;">
+                                Connect with Techpaltan for project inquiries, custom ERP consultations, or any assistance regarding our software development solutions.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <!-- Address -->
+                                    <div class="relative mb-4 wow fadeInUp" data-wow-delay=".2s">
+                                        <i class="abs fs-24 p-3 rounded-1 icofont-location-pin tp-contact-icon-box"></i>
+                                        <div class="ms-80px">
+                                            <h4 class="mb-1" style="color: var(--tp-navy);">Head Office</h4>
+                                            <p style="color: var(--tp-text-gray); line-height: 1.6;">
+                                                Techpaltan HQ, IT Park,<br>
+                                                Chhatrapati Sambhajinagar,<br>
+                                                Maharashtra, India - 431001
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="relative mb-4 wow fadeInUp" data-wow-delay=".3s">
+                                        <i class="abs fs-24 p-3 rounded-1 icofont-envelope tp-contact-icon-box"></i>
+                                        <div class="ms-80px">
+                                            <h4 class="mb-1" style="color: var(--tp-navy);">Send a Message</h4>
+                                            <p style="color: var(--tp-text-gray);">info@techpaltan.com</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div class="relative mb-4 wow fadeInUp" data-wow-delay=".4s">
+                                        <i class="abs fs-24 p-3 rounded-1 icofont-phone tp-contact-icon-box"></i>
+                                        <div class="ms-80px">
+                                            <h4 class="mb-1" style="color: var(--tp-navy);">Call Us</h4>
+                                            <p style="color: var(--tp-text-gray);">+91 98220 95950</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Column -->
+                        <div class="col-lg-7">
+                            <div class="bg-light rounded-3 p-5 relative shadow-sm wow fadeInRight" style="border: 1px solid #edf2f9;">
+
+                                <!-- Contact Form -->
+                                <form id="contact-form-main" method="POST">
+                                    <div class="row g-4">
+                                        <div class="col-lg-12">
+                                            <h3 style="color: var(--tp-navy); font-weight: 700; margin-bottom: 20px;">Send Us an Inquiry</h3>
+                                            <p style="color: var(--tp-text-gray); margin-bottom: 30px;">
+                                                Have questions about our software development services? Fill out the form below and our technical experts will get back to you shortly.
+                                            </p>
+
+                                            <div class="row g-3">
+                                                <!-- Name -->
+                                                <div class="col-md-6 field-set mb-3">
+                                                    <input type="text" name="name" id="name" class="form-control p-3 bg-white" placeholder="Your Name" required style="border: 1px solid #e1e5eb; border-radius: 8px;">
+                                                </div>
+
+                                                <!-- Email -->
+                                                <div class="col-md-6 field-set mb-3">
+                                                    <input type="email" name="email" id="email" class="form-control p-3 bg-white" placeholder="Your Email" required style="border: 1px solid #e1e5eb; border-radius: 8px;">
+                                                </div>
+                                            </div>
+
+                                            <!-- Phone -->
+                                            <div class="field-set mb-3 mt-1">
+                                                <input type="text" name="phone" id="phone" class="form-control p-3 bg-white" placeholder="Your Phone Number" required style="border: 1px solid #e1e5eb; border-radius: 8px;">
+                                            </div>
+
+                                            <!-- Message -->
+                                            <div class="field-set mb-3">
+                                                <textarea name="message" id="message" class="form-control p-3 bg-white" placeholder="Tell us about your project requirements..." required style="height: 150px; border: 1px solid #e1e5eb; border-radius: 8px;"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div id="submit" class="mt-4">
+                                        <input type="submit" id="send_message" value="Send Message" class="btn-main tp-btn-submit px-5 py-3 rounded-2" style="font-weight: 600; letter-spacing: 0.5px;">
+                                    </div>
+
+                                    <!-- Message Box -->
+                                    <div id="form-message" class="mt-3 fw-bold"></div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- AJAX FORM SCRIPT -->
+                        <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const form = document.querySelector("#contact-form-main");
+                            const messageBox = document.getElementById("form-message");
+
+                            if (!form) return;
+
+                            form.addEventListener("submit", function (e) {
+                                e.preventDefault();
+                                const formData = new FormData(form);
+
+                                // Loading Message
+                                messageBox.innerHTML = "<span style='color:var(--tp-blue-light);'>Sending... ⏳</span>";
+
+                                fetch("contactmail.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                .then((response) => response.text())
+                                .then((data) => {
+                                    if (data.toLowerCase().includes("success")) {
+                                        messageBox.innerHTML = "<span style='color:#00A651;'>✅ Enquiry submitted successfully! Our team will contact you soon.</span>";
+                                        form.reset();
+                                    } else {
+                                        messageBox.innerHTML = "<span style='color:#dc3545;'>❌ Failed to send message. Please try again.</span>";
+                                    }
+                                })
+                                .catch((error) => {
+                                    messageBox.innerHTML = "<span style='color:#dc3545;'>❌ Something went wrong! Please check your connection.</span>";
+                                });
+                            });
+                        });
+                        </script>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="relative pt-0 pb-0">
+                <div class="container-fluid px-0">
+                    <div class="mx-auto" style="max-width:100%;">
+                        <div class="overflow-hidden shadow-soft">
+                            <!-- Updated to a generic Chhatrapati Sambhajinagar map embed -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120055.67028125438!2d75.24479366624926!3d19.87023190412431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba2e4d0b2f567%3A0xc3ce7045b4c102a0!2sChhatrapati%20Sambhajinagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                width="100%" height="550" style="border:0; filter: grayscale(20%);" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer class="tp-footer">
+            <div class="container">
+                <div class="row gx-5">
+
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                        <img src="images/logo.png" alt="Techpaltan Logo" style="max-width: 220px; background: #fff; padding: 10px; border-radius: 8px;">
+                        
+                        <div class="spacer-20" style="height: 20px;"></div>
+
+                        <p style="color: #a1a1aa; line-height: 1.8;">
+                            Empowering businesses with custom software solutions, scalable ERP systems, and high-performance mobile and web applications tailored for modern digital growth.
+                        </p>
+
+                        <div class="tp-social-icons mb-sm-30" style="display: flex; gap: 10px;">
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Explore + Company Links -->
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Explore</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="solutions.html">Our Solutions</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="portfolio.html">Case Studies</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 12px;"><a href="#">Privacy Policy</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">Terms of Service</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">Careers</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">IT Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-envelope me-2" style="color: var(--tp-blue-light);"></i>Email
+                            </div>
+                            <div class="mb-4" style="color: #a1a1aa;">info@techpaltan.com</div>
+
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-phone me-2" style="color: var(--tp-blue-light);"></i>Phone
+                            </div>
+                            <div class="mb-4" style="color: #a1a1aa;">+91 98220 95950</div>
+
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-location-pin me-2" style="color: var(--tp-blue-light);"></i>Location
+                            </div>
+                            <div style="color: #a1a1aa; line-height: 1.6;">
+                                Techpaltan HQ, IT Park,<br>
+                                Chhatrapati Sambhajinagar,<br> 
+                                Maharashtra, India - 431001
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Subfooter -->
+            <div class="tp-subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex" style="display: flex; justify-content: space-between; align-items: center; color: #8892a0; font-size: 0.9rem;">
+                                <div class="de-flex-col">
+                                    © 2026 Techpaltan. All rights reserved.
+                                </div>
+                                <div class="de-flex-col">
+                                    Designed & Developed by Techpaltan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- overlay content begin (Sidebar Menu) -->
+    <div id="extra-wrap">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="extra-content">
+            <img src="images/logo.png" class="w-150px mb-3" alt="Techpaltan Logo" style="background: #fff; padding: 5px; border-radius: 4px;">
+
+            <div class="spacer-30-line"></div>
+
+            <h5 class="mb-3" style="color: var(--tp-navy);">Our Solutions</h5>
+            
+            <ul class="ul-check-custom">
+                <li><a href="solutions.html">Custom ERP Development</a></li>
+                <li><a href="solutions.html">Web Applications</a></li>
+                <li><a href="solutions.html">Mobile App Development</a></li>
+                <li><a href="solutions.html">Cloud Infrastructure</a></li>
+                <li><a href="solutions.html">IT Strategy & Consulting</a></li>
+            </ul>
+
+            <div class="spacer-30-line"></div>
+
+            <h5 style="color: var(--tp-navy);">Contact Us</h5>
+            <div style="color: var(--tp-text-gray);"><i class="icofont-clock-time me-2" style="color: var(--tp-orange);"></i>Monday - Saturday 09.00 - 18.00</div>
+            <div style="color: var(--tp-text-gray); margin-top: 8px;"><i class="icofont-location-pin me-2" style="color: var(--tp-orange);"></i>IT Park, Chhatrapati Sambhajinagar</div>
+            <div style="color: var(--tp-text-gray); margin-top: 8px;"><i class="icofont-envelope me-2" style="color: var(--tp-orange);"></i>info@techpaltan.com</div>    
+
+            <div class="spacer-30-line"></div>
+
+            <h5 style="color: var(--tp-navy);">About Us</h5>
+            <p style="color: var(--tp-text-gray);">
+                Techpaltan is your trusted technology partner, delivering scalable, future-ready enterprise software and digital experiences that drive real business growth.
+            </p>
+
+            <div class="social-icons mt-3">
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- overlay content end -->
+
+    <!-- Javascript Files ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/validation-contact.js"></script>
+    <script src="js/custom-marquee.js"></script>
+
+</body>
+</html>

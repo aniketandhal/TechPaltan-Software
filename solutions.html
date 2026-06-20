@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Our Solutions - Techpaltan | Custom ERP & Software Solutions</title>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Explore Techpaltan's comprehensive digital solutions including Custom ERP Systems, Web Development, and Mobile Applications." name="description">
+    <meta content="Software Development, ERP Solutions, Mobile Apps, Web Applications, IT Consulting, Techpaltan" name="keywords">
+    <meta content="Techpaltan" name="author">
+    
+    <!-- CSS Files ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+    <!-- Embedded Techpaltan Brand Styles & Animations -->
+    <style>
+        :root {
+            --tp-navy: #1C2331;
+            --tp-orange: #D96D25;
+            --tp-blue-light: #40B4E5;
+            --tp-blue-dark: #1363A6;
+            --tp-text-gray: #5a6268;
+            --tp-bg-light: #f8f9fb;
+        }
+
+        /* General Typography & Accents */
+        .tp-subtitle {
+            color: var(--tp-orange);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .tp-heading {
+            color: var(--tp-navy);
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        /* Animated Solution Cards */
+        .tp-solution-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(28, 35, 49, 0.05);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            border: 1px solid #edf2f9;
+        }
+
+        /* Top Border Accents */
+        .tp-border-orange { border-top: 4px solid var(--tp-orange); }
+        .tp-border-lightblue { border-top: 4px solid var(--tp-blue-light); }
+        .tp-border-darkblue { border-top: 4px solid var(--tp-blue-dark); }
+
+        .tp-solution-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(217, 109, 37, 0.15);
+        }
+
+        .tp-solution-img-wrap {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tp-solution-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .tp-solution-card:hover .tp-solution-img-wrap img {
+            transform: scale(1.1);
+        }
+
+        .tp-solution-icon {
+            position: absolute;
+            bottom: -25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--tp-blue-light), var(--tp-blue-dark));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 10px 20px rgba(19, 99, 166, 0.3);
+            transition: transform 0.4s ease;
+        }
+
+        .tp-solution-card.tp-border-orange .tp-solution-icon {
+            background: linear-gradient(135deg, var(--tp-orange), #ff8a45);
+            box-shadow: 0 10px 20px rgba(217, 109, 37, 0.3);
+        }
+
+        .tp-solution-card:hover .tp-solution-icon {
+            transform: rotateY(180deg) scale(1.1);
+        }
+
+        .tp-solution-content {
+            padding: 40px 30px 30px;
+        }
+
+        .tp-solution-content h3 {
+            color: var(--tp-navy);
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .tp-solution-content p {
+            color: var(--tp-text-gray);
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .tp-btn-arrow {
+            display: inline-flex;
+            align-items: center;
+            color: var(--tp-navy);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .tp-btn-arrow i {
+            margin-left: 8px;
+            color: var(--tp-orange);
+            transition: transform 0.3s;
+        }
+
+        .tp-btn-arrow:hover {
+            color: var(--tp-orange);
+        }
+
+        .tp-btn-arrow:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Call to Action Section */
+        .tp-cta-section {
+            background: linear-gradient(135deg, var(--tp-navy) 0%, #11151e 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tp-cta-section::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: var(--tp-orange);
+            filter: blur(150px);
+            opacity: 0.15;
+            top: -200px;
+            right: -200px;
+            border-radius: 50%;
+        }
+
+        .btn-tp-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 35px;
+            border-radius: 8px;
+            background: var(--tp-orange);
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(217, 109, 37, 0.3);
+        }
+
+        .btn-tp-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(217, 109, 37, 0.5);
+            color: #fff;
+        }
+
+        /* Checkmark List */
+        .ul-check-custom {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ul-check-custom li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            color: var(--tp-text-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .ul-check-custom li a { color: inherit; text-decoration: none; }
+        .ul-check-custom li a:hover { color: var(--tp-orange); }
+
+        .ul-check-custom li::before {
+            content: "\f00c";
+            font-family: "FontAwesome", sans-serif;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #fff;
+            background: linear-gradient(135deg, var(--tp-blue-light), var(--tp-blue-dark));
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.7rem;
+        }
+
+        /* Footer Settings */
+        .tp-footer {
+            background-color: var(--tp-navy);
+            color: #d1d5db;
+            padding-top: 80px;
+        }
+        .tp-footer h5 {
+            color: #ffffff !important;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--tp-orange);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .tp-footer a { color: #a1a1aa; text-decoration: none; transition: 0.3s; }
+        .tp-footer a:hover { color: var(--tp-blue-light); }
+        .tp-subfooter {
+            background-color: #151a25;
+            padding: 25px 0;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent header-light header-float">
+            <div class="container-float">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                            <img class="logo-scroll" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                            <img class="logo-mobile" src="images/logo.png" alt="Techpaltan Logo" style="max-height: 45px; background: #fff; padding: 5px; border-radius: 4px;">
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a></li>
+                                        <li><a class="menu-item" href="about.html">About Us</a></li>
+                                        <li>
+                                            <a class="menu-item" href="solutions.html">Solutions</a>
+                                            <ul>
+                                                <li><a class="menu-item" href="solutions.html">All Solutions</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=erp">Custom ERP Systems</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=web">Web Applications</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=mobile">Mobile Apps</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="menu_side_area">
+                                        <a class="btn-main fx-slide" href="contact.html" style="background: var(--tp-orange); border-color: var(--tp-orange);">
+                                            <span>Get a Proposal</span>
+                                        </a>
+                                        <span id="menu-btn"></span>
+                                    </div>
+
+                                    <div id="btn-extra" class="img">
+                                        <img src="images/ui/dots.svg" class="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+            
+            <!-- section begin -->
+            <section id="subheader" class="jarallax relative">
+                <!-- Tech / Coding Background Image -->
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="jarallax-img" alt="Techpaltan Solutions">
+                
+                <!-- Dark Overlay -->
+                <div style="position: absolute; inset: 0; background: rgba(28, 35, 49, 0.85);"></div>
+
+                <div class="container relative z-2">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-8 pt-5 pb-5">
+                            <div class="clearfix"></div>
+                            <h1 class="wow fadeInUp" data-wow-delay=".4s" style="color: rgb(255, 255, 255) !important;">Our Digital Solutions</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".6s" style="color: #a1a1aa; font-size: 1.2rem; margin-top: 10px; max-width: 600px;">
+                                Empowering global enterprises with scalable, secure, and custom-built software architectures tailored for modern growth.
+                            </p>
+                            <div class="crumb-wrapper mt-3">
+                                <ul class="crumb wow fadeInUp" data-wow-delay=".8s">
+                                    <li><a href="index.html" style="color: whitesmoke !important;">Home</a></li>
+                                    <li class="active" style="color: var(--tp-orange) !important;">Solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- Main Solutions Grid Section -->
+            <section style="background: var(--tp-bg-light); padding: 100px 0;">
+                <div class="container">
+                    
+                    <div class="row mb-5 text-center">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="tp-subtitle wow fadeInUp">Comprehensive Expertise</div>
+                            <h2 class="tp-heading wow fadeInUp" data-wow-delay=".2s">Tailored Technology for Every Industry</h2>
+                        </div>
+                    </div>
+
+                    <div class="row g-5">
+
+                        <!-- Solution 1: ERP (Orange Theme) -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                            <div class="tp-solution-card tp-border-orange">
+                                <div class="tp-solution-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ERP Dashboard">
+                                    <div class="tp-solution-icon">
+                                        <i class="fa fa-server"></i>
+                                    </div>
+                                </div>
+                                <div class="tp-solution-content">
+                                    <h3>Custom ERP Systems</h3>
+                                    <p>Centralize your business operations. We build bespoke ERP solutions that integrate finance, HR, supply chain, and CRM into one seamless, scalable platform.</p>
+                                    <a href="contact.html" class="tp-btn-arrow">Explore ERP <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solution 2: Web Apps (Light Blue Theme) -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="tp-solution-card tp-border-lightblue">
+                                <div class="tp-solution-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Development">
+                                    <div class="tp-solution-icon">
+                                        <i class="fa fa-laptop-code"></i>
+                                    </div>
+                                </div>
+                                <div class="tp-solution-content">
+                                    <h3>Web Applications</h3>
+                                    <p>Deliver powerful experiences through browsers. We engineer fast, secure, and robust web portals and SaaS platforms using modern full-stack frameworks.</p>
+                                    <a href="contact.html" class="tp-btn-arrow">Explore Web <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solution 3: Mobile Apps (Dark Blue Theme) -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                            <div class="tp-solution-card tp-border-darkblue">
+                                <div class="tp-solution-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile App Development">
+                                    <div class="tp-solution-icon">
+                                        <i class="fa fa-mobile-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="tp-solution-content">
+                                    <h3>Mobile Development</h3>
+                                    <p>Connect with your audience anywhere. Our native and cross-platform mobile apps are designed for flawless performance and intuitive user experiences.</p>
+                                    <a href="contact.html" class="tp-btn-arrow">Explore Mobile <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solution 4: Cloud Infrastructure -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="tp-solution-card tp-border-darkblue">
+                                <div class="tp-solution-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cloud Infrastructure">
+                                    <div class="tp-solution-icon">
+                                        <i class="fa fa-cloud"></i>
+                                    </div>
+                                </div>
+                                <div class="tp-solution-content">
+                                    <h3>Cloud & DevOps</h3>
+                                    <p>Ensure 99.9% uptime. We handle cloud architecture (AWS, Azure), secure server migration, and CI/CD pipeline automation for rapid, reliable deployments.</p>
+                                    <a href="contact.html" class="tp-btn-arrow">Explore Cloud <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solution 5: UI/UX Design -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="tp-solution-card tp-border-orange">
+                                <div class="tp-solution-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UI/UX Design">
+                                    <div class="tp-solution-icon">
+                                        <i class="fa fa-paint-brush"></i>
+                                    </div>
+                                </div>
+                                <div class="tp-solution-content">
+                                    <h3>UI/UX Design</h3>
+                                    <p>Design that drives action. Our UI/UX experts craft visually stunning, user-centric interfaces that reduce friction and maximize user retention.</p>
+                                    <a href="contact.html" class="tp-btn-arrow">Explore Design <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solution 6: IT Consulting -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="tp-solution-card tp-border-lightblue">
+                                <div class="tp-solution-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="IT Consulting">
+                                    <div class="tp-solution-icon">
+                                        <i class="fa fa-chart-line"></i>
+                                    </div>
+                                </div>
+                                <div class="tp-solution-content">
+                                    <h3>IT Strategy & Consulting</h3>
+                                    <p>Navigate complex tech landscapes. We provide strategic consulting on digital transformation, tech stack selection, and system security.</p>
+                                    <a href="contact.html" class="tp-btn-arrow">Explore Consulting <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="tp-cta-section text-center text-light">
+                <div class="container relative z-2">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2 class="mb-4 wow fadeInUp" style="font-size: 3rem; font-weight: 800;">Ready to Transform Your Business?</h2>
+                            <p class="mb-5 wow fadeInUp" data-wow-delay=".2s" style="font-size: 1.2rem; color: #a1a1aa;">
+                                Whether you need a complete ERP overhaul, a high-performance web application, or a dedicated mobile app, Techpaltan has the expertise to execute your vision. Let's build the future together.
+                            </p>
+                            <div class="wow fadeInUp" data-wow-delay=".4s">
+                                <a href="contact.html" class="btn-tp-primary">Get Your Free Proposal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer class="tp-footer">
+            <div class="container">
+                <div class="row gx-5">
+
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                        <img src="images/logo.png" alt="Techpaltan Logo" style="max-width: 220px; background: #fff; padding: 10px; border-radius: 8px;">
+                        
+                        <div class="spacer-20" style="height: 20px;"></div>
+
+                        <p style="color: #a1a1aa; line-height: 1.8;">
+                            Empowering businesses with custom software solutions, scalable ERP systems, and high-performance mobile and web applications tailored for modern digital growth.
+                        </p>
+
+                        <div class="tp-social-icons mb-sm-30" style="display: flex; gap: 10px;">
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; background:rgba(255,255,255,0.05); color:#fff; border-radius:50%;"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Explore + Company Links -->
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Explore</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 12px;"><a href="index.html">Home</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="about.html">About Us</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="solutions.html">Our Solutions</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="portfolio.html">Case Studies</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 12px;"><a href="#">Privacy Policy</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">Terms of Service</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">Careers</a></li>
+                                        <li style="margin-bottom: 12px;"><a href="#">IT Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-envelope me-2" style="color: var(--tp-blue-light);"></i>Email
+                            </div>
+                            <div class="mb-4" style="color: #a1a1aa;">info@techpaltan.com</div>
+
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-phone me-2" style="color: var(--tp-blue-light);"></i>Phone
+                            </div>
+                            <div class="mb-4" style="color: #a1a1aa;">+91 98220 95950</div>
+
+                            <div class="fw-bold text-white mb-1">
+                                <i class="icofont-location-pin me-2" style="color: var(--tp-blue-light);"></i>Location
+                            </div>
+                            <div style="color: #a1a1aa; line-height: 1.6;">
+                                Techpaltan HQ, IT Park,<br>
+                                Chhatrapati Sambhajinagar,<br> 
+                                Maharashtra, India - 431001
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Subfooter -->
+            <div class="tp-subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex" style="display: flex; justify-content: space-between; align-items: center; color: #8892a0; font-size: 0.9rem;">
+                                <div class="de-flex-col">
+                                    © 2026 Techpaltan. All rights reserved.
+                                </div>
+                                <div class="de-flex-col">
+                                    Designed & Developed by Techpaltan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- overlay content begin (Sidebar Menu) -->
+    <div id="extra-wrap">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="extra-content">
+            <img src="images/logo.png" class="w-150px mb-3" alt="Techpaltan Logo" style="background: #fff; padding: 5px; border-radius: 4px;">
+
+            <div class="spacer-30-line"></div>
+
+            <h5 class="mb-3" style="color: var(--tp-navy);">Our Solutions</h5>
+            
+            <ul class="ul-check-custom">
+                <li><a href="solutions.html">Custom ERP Development</a></li>
+                <li><a href="solutions.html">Web Applications</a></li>
+                <li><a href="solutions.html">Mobile App Development</a></li>
+                <li><a href="solutions.html">Cloud Infrastructure</a></li>
+                <li><a href="solutions.html">IT Strategy & Consulting</a></li>
+            </ul>
+
+            <div class="spacer-30-line"></div>
+
+            <h5 style="color: var(--tp-navy);">Contact Us</h5>
+            <div style="color: var(--tp-text-gray);"><i class="icofont-clock-time me-2" style="color: var(--tp-orange);"></i>Monday - Saturday 09.00 - 18.00</div>
+            <div style="color: var(--tp-text-gray); margin-top: 8px;"><i class="icofont-location-pin me-2" style="color: var(--tp-orange);"></i>IT Park, Chhatrapati Sambhajinagar</div>
+            <div style="color: var(--tp-text-gray); margin-top: 8px;"><i class="icofont-envelope me-2" style="color: var(--tp-orange);"></i>info@techpaltan.com</div>    
+
+            <div class="spacer-30-line"></div>
+
+            <h5 style="color: var(--tp-navy);">About Us</h5>
+            <p style="color: var(--tp-text-gray);">
+                Techpaltan is your trusted technology partner, delivering scalable, future-ready enterprise software and digital experiences that drive real business growth.
+            </p>
+
+            <div class="social-icons mt-3">
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" style="color: var(--tp-blue-dark); font-size: 1.2rem; margin-right: 15px;"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- overlay content end -->
+
+    <!-- Javascript Files ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/custom-marquee.js"></script>
+
+</body>
+</html>
