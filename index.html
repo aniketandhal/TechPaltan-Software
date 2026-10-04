@@ -2,6 +2,7 @@
 <html lang="en">
 
 
+<!-- Mirrored from madebydesignesia.com/themes/seoly/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 May 2026 05:37:08 GMT -->
 
 <head>
     <title>Techpaltan - ERP | Application | Websites </title>
@@ -35,516 +36,6 @@ TechPaltan
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
-
-
-<style id="techpaltan-modern-home">
-    :root {
-        --tp-navy: #101828;
-        --tp-orange: #D96D25;
-        --tp-blue: #1363A6;
-        --tp-cyan: #40B4E5;
-        --tp-muted: #667085;
-        --tp-soft: #F6F8FC;
-    }
-
-    .tp-stats-strip {
-        position: relative;
-        z-index: 10;
-        margin: -45px auto 0;
-        max-width: 1120px;
-        padding: 22px 28px;
-        background: rgba(255,255,255,.96);
-        border: 1px solid rgba(16,24,40,.08);
-        border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(16,24,40,.12);
-        backdrop-filter: blur(14px);
-    }
-
-    .tp-stat-item {
-        text-align: center;
-        padding: 8px 15px;
-        border-right: 1px solid #e8ecf2;
-    }
-    .tp-stat-item:last-child { border-right: 0; }
-    .tp-stat-number {
-        font-size: 28px;
-        line-height: 1;
-        font-weight: 800;
-        color: var(--tp-navy);
-        margin-bottom: 7px;
-    }
-    .tp-stat-label {
-        color: var(--tp-muted);
-        font-size: 13px;
-        font-weight: 600;
-    }
-
-    .tp-services-modern {
-        padding: 105px 0 90px;
-        background:
-            radial-gradient(circle at 10% 10%, rgba(64,180,229,.10), transparent 28%),
-            radial-gradient(circle at 90% 20%, rgba(217,109,37,.08), transparent 28%),
-            #f8fafc;
-    }
-
-    .tp-section-kicker {
-        color: var(--tp-orange);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 12px;
-        font-weight: 800;
-        margin-bottom: 12px;
-    }
-
-    .tp-section-title {
-        color: var(--tp-navy);
-        font-size: clamp(34px, 4vw, 54px);
-        line-height: 1.08;
-        font-weight: 850;
-        letter-spacing: -1.5px;
-        margin-bottom: 16px;
-    }
-
-    .tp-section-desc {
-        max-width: 720px;
-        margin: 0 auto;
-        color: var(--tp-muted);
-        font-size: 17px;
-        line-height: 1.8;
-    }
-
-    .tp-category-filter {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 38px 0 45px;
-    }
-
-    .tp-filter-btn {
-        border: 1px solid #dfe5ed;
-        background: #fff;
-        color: #344054;
-        border-radius: 999px;
-        padding: 11px 19px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: .25s ease;
-    }
-
-    .tp-filter-btn:hover,
-    .tp-filter-btn.active {
-        background: var(--tp-navy);
-        color: #fff;
-        border-color: var(--tp-navy);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(16,24,40,.14);
-    }
-
-    .tp-service-card {
-        position: relative;
-        height: 100%;
-        padding: 28px;
-        border-radius: 22px;
-        background: rgba(255,255,255,.92);
-        border: 1px solid #e9edf3;
-        box-shadow: 0 12px 35px rgba(16,24,40,.06);
-        overflow: hidden;
-        transition: .35s cubic-bezier(.2,.8,.2,1);
-    }
-
-    .tp-service-card::after {
-        content: "";
-        position: absolute;
-        width: 130px;
-        height: 130px;
-        right: -55px;
-        top: -55px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, rgba(64,180,229,.16), rgba(217,109,37,.12));
-        transition: .35s ease;
-    }
-
-    .tp-service-card:hover {
-        transform: translateY(-9px);
-        border-color: rgba(64,180,229,.38);
-        box-shadow: 0 22px 55px rgba(16,24,40,.12);
-    }
-
-    .tp-service-card:hover::after { transform: scale(1.5); }
-
-    .tp-service-icon {
-        width: 58px;
-        height: 58px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 16px;
-        color: #fff;
-        font-size: 23px;
-        background: linear-gradient(135deg, var(--tp-blue), var(--tp-cyan));
-        box-shadow: 0 12px 25px rgba(19,99,166,.22);
-        margin-bottom: 22px;
-    }
-
-    .tp-service-card:nth-child(2n) .tp-service-icon {
-        background: linear-gradient(135deg, #b9571c, var(--tp-orange));
-        box-shadow: 0 12px 25px rgba(217,109,37,.20);
-    }
-
-    .tp-service-card h3 {
-        color: var(--tp-navy);
-        font-size: 21px;
-        font-weight: 800;
-        margin-bottom: 12px;
-    }
-
-    .tp-service-card p {
-        color: var(--tp-muted);
-        font-size: 14px;
-        line-height: 1.75;
-        margin-bottom: 20px;
-    }
-
-    .tp-service-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--tp-blue);
-        font-size: 13px;
-        font-weight: 800;
-        text-decoration: none;
-    }
-
-    .tp-service-link:hover { color: var(--tp-orange); }
-
-    .tp-service-card.is-hidden {
-        display: none;
-    }
-
-    .tp-mini-tag {
-        display: inline-block;
-        padding: 5px 9px;
-        border-radius: 7px;
-        background: #f1f5f9;
-        color: #475467;
-        font-size: 10px;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: .8px;
-        margin-bottom: 14px;
-    }
-
-    .tp-process-section {
-        padding: 95px 0;
-        background: #fff;
-    }
-
-    .tp-process-card {
-        height: 100%;
-        padding: 28px;
-        border-radius: 20px;
-        background: #fff;
-        border: 1px solid #e9edf3;
-        transition: .3s ease;
-    }
-    .tp-process-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 45px rgba(16,24,40,.09);
-    }
-    .tp-process-no {
-        font-size: 12px;
-        font-weight: 900;
-        color: var(--tp-orange);
-        letter-spacing: 1px;
-        margin-bottom: 16px;
-    }
-    .tp-process-card h4 {
-        color: var(--tp-navy);
-        font-weight: 800;
-        margin-bottom: 10px;
-    }
-    .tp-process-card p {
-        color: var(--tp-muted);
-        line-height: 1.7;
-        font-size: 14px;
-        margin: 0;
-    }
-
-    @media (max-width: 991px) {
-        .tp-stat-item { border-right: 0; border-bottom: 1px solid #e8ecf2; }
-        .tp-stat-item:last-child { border-bottom: 0; }
-        .tp-stats-strip { margin: -25px 20px 0; }
-        .tp-services-modern { padding-top: 75px; }
-    }
-
-    @media (max-width: 576px) {
-        .tp-category-filter { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 6px; }
-        .tp-filter-btn { flex: 0 0 auto; }
-        .tp-service-card { padding: 24px; }
-    }
-</style>
-
-
-<style id="tp-premium-service-cards">
-/* =========================================================
-   TECHPALTAN PREMIUM SERVICE CARDS
-   Logo theme: Navy + Orange + Blue
-   ========================================================= */
-
-#services .tp-service-item{
-    perspective:1200px;
-}
-
-#services .tp-service-card{
-    position:relative;
-    min-height:370px;
-    padding:30px 30px 26px;
-    border:1px solid rgba(19,99,166,.12);
-    border-radius:26px;
-    background:
-        radial-gradient(circle at 100% 0%, rgba(64,180,229,.13), transparent 30%),
-        radial-gradient(circle at 0% 100%, rgba(217,109,37,.09), transparent 32%),
-        rgba(255,255,255,.96);
-    box-shadow:0 14px 45px rgba(16,24,40,.07);
-    overflow:hidden;
-    isolation:isolate;
-    transition:transform .4s cubic-bezier(.2,.8,.2,1),
-               box-shadow .4s ease,
-               border-color .4s ease;
-}
-
-/* Premium gradient border */
-#services .tp-service-card::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    padding:1px;
-    border-radius:26px;
-    background:linear-gradient(135deg,
-        rgba(19,99,166,.35),
-        transparent 35%,
-        rgba(217,109,37,.30));
-    -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite:xor;
-    mask-composite:exclude;
-    pointer-events:none;
-    z-index:3;
-}
-
-/* Decorative glow */
-#services .tp-service-card::after{
-    content:"";
-    position:absolute;
-    width:190px;
-    height:190px;
-    right:-95px;
-    top:-95px;
-    border-radius:50%;
-    background:linear-gradient(135deg,rgba(64,180,229,.22),rgba(217,109,37,.18));
-    filter:blur(2px);
-    transition:transform .5s ease;
-    z-index:-1;
-}
-
-/* Bottom accent */
-#services .tp-service-card .tp-card-accent{
-    position:absolute;
-    left:30px;
-    right:30px;
-    bottom:0;
-    height:3px;
-    border-radius:10px 10px 0 0;
-    background:linear-gradient(90deg,var(--tp-blue),var(--tp-cyan),var(--tp-orange));
-    transform:scaleX(.25);
-    transform-origin:left;
-    opacity:.45;
-    transition:.4s ease;
-}
-
-#services .tp-service-card:hover{
-    transform:translateY(-12px) rotateX(1deg);
-    border-color:rgba(19,99,166,.25);
-    box-shadow:
-        0 28px 70px rgba(16,24,40,.13),
-        0 8px 25px rgba(19,99,166,.07);
-}
-
-#services .tp-service-card:hover::after{
-    transform:scale(1.65);
-}
-
-#services .tp-service-card:hover .tp-card-accent{
-    transform:scaleX(1);
-    opacity:1;
-}
-
-/* Number badge */
-#services .tp-service-card .tp-card-number{
-    position:absolute;
-    top:24px;
-    right:27px;
-    font-size:11px;
-    font-weight:900;
-    letter-spacing:1.5px;
-    color:#a3adba;
-}
-
-/* Icon */
-#services .tp-service-icon{
-    position:relative;
-    width:68px;
-    height:68px;
-    margin-bottom:25px;
-    border-radius:20px;
-    background:linear-gradient(145deg,var(--tp-blue),#2d8bc5);
-    box-shadow:
-        0 14px 28px rgba(19,99,166,.24),
-        inset 0 1px 0 rgba(255,255,255,.35);
-    font-size:25px;
-    z-index:2;
-}
-
-#services .tp-service-card:nth-child(2n) .tp-service-icon{
-    background:linear-gradient(145deg,var(--tp-orange),#f19a42);
-    box-shadow:
-        0 14px 28px rgba(217,109,37,.24),
-        inset 0 1px 0 rgba(255,255,255,.35);
-}
-
-#services .tp-service-icon::after{
-    content:"";
-    position:absolute;
-    inset:-6px;
-    border:1px solid currentColor;
-    border-radius:24px;
-    opacity:.10;
-}
-
-/* Tag */
-#services .tp-mini-tag{
-    display:inline-flex;
-    align-items:center;
-    gap:7px;
-    padding:6px 11px;
-    margin-bottom:17px;
-    border:1px solid #e4eaf1;
-    border-radius:999px;
-    background:#f8fafc;
-    color:#526173;
-    font-size:10px;
-    font-weight:800;
-    letter-spacing:1px;
-}
-
-#services .tp-mini-tag::before{
-    content:"";
-    width:6px;
-    height:6px;
-    border-radius:50%;
-    background:var(--tp-orange);
-    box-shadow:0 0 0 4px rgba(217,109,37,.10);
-}
-
-/* Heading */
-#services .tp-service-card h3{
-    position:relative;
-    font-size:23px;
-    line-height:1.25;
-    letter-spacing:-.5px;
-    margin-bottom:13px;
-    padding-right:25px;
-}
-
-/* Description */
-#services .tp-service-card p{
-    font-size:14px;
-    line-height:1.8;
-    min-height:76px;
-    margin-bottom:22px;
-}
-
-/* Link */
-#services .tp-service-link{
-    display:inline-flex;
-    align-items:center;
-    gap:11px;
-    padding:9px 0;
-    color:var(--tp-blue);
-    font-size:13px;
-    font-weight:850;
-    transition:.3s ease;
-}
-
-#services .tp-service-link i{
-    width:31px;
-    height:31px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    border:1px solid rgba(19,99,166,.18);
-    border-radius:50%;
-    background:#f5f9fc;
-    transition:.3s ease;
-}
-
-#services .tp-service-link:hover{
-    color:var(--tp-orange);
-}
-
-#services .tp-service-link:hover i{
-    color:#fff;
-    border-color:var(--tp-orange);
-    background:var(--tp-orange);
-    transform:translateX(4px);
-}
-
-/* Filter buttons upgraded */
-#services .tp-filter-btn{
-    position:relative;
-    border:1px solid #dfe6ee;
-    background:rgba(255,255,255,.85);
-    box-shadow:0 5px 15px rgba(16,24,40,.035);
-    transition:.3s ease;
-}
-
-#services .tp-filter-btn:hover{
-    border-color:rgba(19,99,166,.35);
-    color:var(--tp-blue);
-    transform:translateY(-3px);
-}
-
-#services .tp-filter-btn.active{
-    background:linear-gradient(135deg,var(--tp-blue),#245f91);
-    border-color:var(--tp-blue);
-    box-shadow:0 10px 25px rgba(19,99,166,.22);
-}
-
-/* Responsive */
-@media(max-width:767px){
-    #services .tp-service-card{
-        min-height:345px;
-        padding:26px 24px 24px;
-        border-radius:22px;
-    }
-
-    #services .tp-service-card::before{
-        border-radius:22px;
-    }
-
-    #services .tp-service-icon{
-        width:62px;
-        height:62px;
-        border-radius:18px;
-        margin-bottom:21px;
-    }
-
-    #services .tp-service-card h3{
-        font-size:21px;
-    }
-}
-</style>
 
 </head>
 
@@ -580,16 +71,12 @@ TechPaltan
                                         <li><a class="menu-item" href="index.html">Home</a></li>
                                         <li><a class="menu-item" href="about.html">About Us</a></li>
                                         <li>
-                                            <a class="menu-item" href="solutions.html">Services</a>
+                                            <a class="menu-item" href="solutions.html">Solutions</a>
                                             <ul>
-                                                <li><a class="menu-item" href="solutions.html">All Services</a></li>
-                                                <li><a class="menu-item" href="solutions.html?category=software">Software Development</a></li>
-                                                <li><a class="menu-item" href="solutions.html?category=erp">ERP Solutions</a></li>
-                                                <li><a class="menu-item" href="solutions.html?category=web">Web Development</a></li>
+                                                <li><a class="menu-item" href="solutions.html">All Solutions</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=erp">Custom ERP Systems</a></li>
+                                                <li><a class="menu-item" href="solutions.html?category=web">Web Applications</a></li>
                                                 <li><a class="menu-item" href="solutions.html?category=mobile">Mobile Apps</a></li>
-                                                <li><a class="menu-item" href="solutions.html?category=ecommerce">E-Commerce</a></li>
-                                                <li><a class="menu-item" href="solutions.html?category=design">Design & Branding</a></li>
-                                                <li><a class="menu-item" href="solutions.html?category=printing">Printing & Business Design</a></li>
                                             </ul>
                                         </li>
                                         <li><a class="menu-item" href="contact.html">Contact</a></li>
@@ -636,23 +123,23 @@ TechPaltan
                     <div class="hero-content">
 
                         <h1 class="hero-title">
-                            We Build Technology <br>
-                            That Moves Your Business Forward
+                            Empowering Businesses <br>
+                            Through Technology & Innovation
                         </h1>
 
                         <p class="hero-text">
-                            From custom software, ERP and websites to mobile apps, e-commerce platforms,
-                            graphic design and business branding — TechPaltan turns your ideas and manual processes
-                            into practical digital solutions that help your business grow.
+                            TechPaltan delivers cutting-edge technology solutions, digital transformation strategies,
+                            AI-powered innovations, and scalable business systems that help organizations grow faster,
+                            operate smarter, and achieve sustainable success.
                         </p>
 
                         <div class="hero-buttons">
                             <a href="contact.html" class="btn-main">
-                                Start Your Project
+                                Schedule Consultation
                             </a>
 
                             <a href="services.html" class="btn-outline">
-                                Explore Services
+                                Explore Solutions
                             </a>
                         </div>
 
@@ -754,37 +241,6 @@ TechPaltan
     </div>
 
 </section>
-
-
-            <!-- TechPaltan Quick Stats -->
-            <section class="tp-stats-strip" aria-label="TechPaltan highlights">
-                <div class="row g-0 align-items-center">
-                    <div class="col-lg-3 col-6">
-                        <div class="tp-stat-item">
-                            <div class="tp-stat-number">360°</div>
-                            <div class="tp-stat-label">Digital Solutions</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="tp-stat-item">
-                            <div class="tp-stat-number">8+</div>
-                            <div class="tp-stat-label">Service Categories</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="tp-stat-item">
-                            <div class="tp-stat-number">100%</div>
-                            <div class="tp-stat-label">Custom Solutions</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="tp-stat-item">
-                            <div class="tp-stat-number">1</div>
-                            <div class="tp-stat-label">Technology Partner</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <style>
                 .kyrrox-slider-hero {
@@ -1061,191 +517,290 @@ TechPaltan
                 </div>
             </section> -->
 
-           
-<section class="tp-services-modern" id="services">
+           <section style="background-color: #F8F9FA; padding: 80px 0;">
+    <!-- Embedded Custom Theme Styles -->
+    <style>
+        :root {
+            --tp-navy: #1C2331;
+            --tp-orange: #D96D25;
+            --tp-blue-light: #40B4E5;
+            --tp-blue-dark: #1363A6;
+            --tp-text-gray: #5a6268;
+        }
+
+        .subtitle-custom {
+            color: var(--tp-orange);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .heading-custom {
+            color: var(--tp-navy);
+            font-weight: 800;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .text-custom {
+            color: var(--tp-text-gray);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Techpaltan Card Styles */
+        .tp-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: 0 8px 24px rgba(28, 35, 49, 0.06);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+        }
+
+        .tp-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(217, 109, 37, 0.12);
+        }
+
+        /* Top Border Accents based on Logo Colors */
+        .tp-border-orange { border-top: 5px solid var(--tp-orange); }
+        .tp-border-lightblue { border-top: 5px solid var(--tp-blue-light); }
+        .tp-border-darkblue { border-top: 5px solid var(--tp-blue-dark); }
+
+        .tp-card h3 {
+            color: var(--tp-navy);
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin: 20px 0 15px;
+        }
+
+        .tp-card p {
+            color: var(--tp-text-gray);
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        /* Image Container */
+        .tp-img-wrapper {
+            height: 220px;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #f1f1f1;
+        }
+
+        .tp-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .tp-card:hover .tp-img-wrapper img {
+            transform: scale(1.08);
+        }
+
+        /* Custom Button/Link */
+        .btn-plus-custom {
+            color: var(--tp-orange);
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .btn-plus-custom i {
+            margin-right: 8px;
+            background: var(--tp-orange);
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            transition: background 0.3s;
+        }
+
+        .btn-plus-custom:hover {
+            color: var(--tp-blue-dark);
+        }
+
+        .btn-plus-custom:hover i {
+            background: var(--tp-blue-dark);
+        }
+    </style>
+
     <div class="container">
-        <div class="text-center">
-            <div class="tp-section-kicker">What We Build</div>
-            <h2 class="tp-section-title">Everything Your Business Needs to Go Digital</h2>
-            <p class="tp-section-desc">
-                One technology partner for software, websites, apps, e-commerce, design and business branding.
-                Choose a service category to explore what TechPaltan can build for you.
-            </p>
+
+        <!-- Heading Section -->
+        <div class="row g-4 align-items-end">
+            <div class="col-lg-5">
+                <div class="subtitle-custom wow fadeInUp">Techpaltan Core Services</div>
+                <h2 class="heading-custom mb-0 wow fadeInUp">
+                    Growth Solutions For Business
+                </h2>
+            </div>
+
+            <div class="col-lg-4 offset-lg-3">
+                <div class="spacer-single"></div>
+                <p class="text-custom wow fadeInUp">
+                    Empower your business with our cutting-edge digital solutions. We specialize in robust enterprise systems, high-performance websites, and seamless mobile experiences.
+                </p>
+            </div>
         </div>
 
-        <div class="tp-category-filter" role="tablist" aria-label="Service categories">
-            <button class="tp-filter-btn active" data-filter="all">All Services</button>
-            <button class="tp-filter-btn" data-filter="software">Software</button>
-            <button class="tp-filter-btn" data-filter="erp">ERP</button>
-            <button class="tp-filter-btn" data-filter="web">Web</button>
-            <button class="tp-filter-btn" data-filter="mobile">Mobile</button>
-            <button class="tp-filter-btn" data-filter="ecommerce">E-Commerce</button>
-            <button class="tp-filter-btn" data-filter="design">Design</button>
-            <button class="tp-filter-btn" data-filter="printing">Printing</button>
-            <button class="tp-filter-btn" data-filter="growth">Digital Growth</button>
-        </div>
+        <div class="spacer-single" style="margin-top: 40px; margin-bottom: 40px;"></div>
 
-        <div class="row g-4" id="tpServiceGrid">
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="software">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">01</span>
-                    <span class="tp-mini-tag">Software</span>
-                    <div class="tp-service-icon"><i class="fa fa-code"></i></div>
-                    <h3>Custom Software Development</h3>
-                    <p>Business software designed around your exact workflow — from enquiry and billing to inventory, reports and automation.</p>
-                    <a href="solutions.html?category=software" class="tp-service-link">Explore Software <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="erp">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">02</span>
-                    <span class="tp-mini-tag">Business Systems</span>
-                    <div class="tp-service-icon"><i class="fa fa-cubes"></i></div>
-                    <h3>ERP Solutions</h3>
-                    <p>Connected ERP systems for manufacturing, retail and service businesses with modules that match real business processes.</p>
-                    <a href="solutions.html?category=erp" class="tp-service-link">Explore ERP <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="web">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">03</span>
-                    <span class="tp-mini-tag">Web</span>
-                    <div class="tp-service-icon"><i class="fa fa-globe"></i></div>
-                    <h3>Website & Web Applications</h3>
-                    <p>Modern responsive business websites, admin panels, portals and custom web applications built for speed and usability.</p>
-                    <a href="solutions.html?category=web" class="tp-service-link">Explore Web <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="mobile">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">04</span>
-                    <span class="tp-mini-tag">Mobile</span>
-                    <div class="tp-service-icon"><i class="fa fa-mobile"></i></div>
-                    <h3>Mobile App Development</h3>
-                    <p>Customer, employee and business apps with clean interfaces, secure APIs and practical features for Android and iOS.</p>
-                    <a href="solutions.html?category=mobile" class="tp-service-link">Explore Mobile <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="ecommerce">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">05</span>
-                    <span class="tp-mini-tag">Online Business</span>
-                    <div class="tp-service-icon"><i class="fa fa-shopping-cart"></i></div>
-                    <h3>E-Commerce Platforms</h3>
-                    <p>Online stores with product management, cart, checkout, payment gateway, orders, customer management and admin controls.</p>
-                    <a href="solutions.html?category=ecommerce" class="tp-service-link">Build Your Store <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="design">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">06</span>
-                    <span class="tp-mini-tag">Creative</span>
-                    <div class="tp-service-icon"><i class="fa fa-paint-brush"></i></div>
-                    <h3>UI/UX & Graphic Design</h3>
-                    <p>Professional UI/UX, logo design, social creatives and brand visuals that make your business look consistent and memorable.</p>
-                    <a href="solutions.html?category=design" class="tp-service-link">Explore Design <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="printing">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">07</span>
-                    <span class="tp-mini-tag">Business Branding</span>
-                    <div class="tp-service-icon"><i class="fa fa-id-card"></i></div>
-                    <h3>Visiting Cards & Brochures</h3>
-                    <p>Business cards, brochures, flyers, letterheads and professional marketing material designed to represent your brand.</p>
-                    <a href="solutions.html?category=printing" class="tp-service-link">Explore Branding <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 tp-service-item" data-category="growth">
-                <div class="tp-service-card">
-                    <span class="tp-card-number">08</span>
-                    <span class="tp-mini-tag">Growth</span>
-                    <div class="tp-service-icon"><i class="fa fa-line-chart"></i></div>
-                    <h3>SEO, Hosting & Maintenance</h3>
-                    <p>Website deployment, domain setup, SEO basics, performance improvements, updates and ongoing technical support.</p>
-                    <a href="contact.html" class="tp-service-link">Talk To Us <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- How TechPaltan Works -->
-<section class="tp-process-section">
-    <div class="container">
-        <div class="text-center mb-5">
-            <div class="tp-section-kicker">Simple Process</div>
-            <h2 class="tp-section-title">From Idea to Launch</h2>
-            <p class="tp-section-desc">A clear process keeps your project simple, transparent and focused on business results.</p>
-        </div>
-
+        <!-- Product Cards -->
         <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="tp-process-card">
-                    <div class="tp-process-no">01 / DISCOVER</div>
-                    <h4>Understand</h4>
-                    <p>We understand your business, users, workflow and the problem you want to solve.</p>
+
+            <!-- Product 1: ERP Applications (Orange Accent) -->
+            <div class="col-lg-4 wow fadeInRight" data-wow-delay=".2s">
+                <div class="tp-card tp-border-orange">
+                    <div class="tp-img-wrapper">
+                        <!-- Unsplash realistic business dashboard image -->
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ERP Dashboard Software">
+                    </div>
+                    <h3>ERP Applications</h3>
+                    <p>
+                        Scalable Enterprise Resource Planning solutions designed to automate workflows, manage production, and streamline operations into one centralized platform.
+                    </p>
+                    <a class="btn-plus-custom" href="erp-details.html">
+                        <i class="fa fa-plus"></i>
+                        <span>Explore ERP</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="tp-process-card">
-                    <div class="tp-process-no">02 / DESIGN</div>
-                    <h4>Plan & Design</h4>
-                    <p>We create the structure, user experience and technology plan before development starts.</p>
+
+            <!-- Product 2: Websites (Light Blue Accent) -->
+            <div class="col-lg-4 wow fadeInRight" data-wow-delay=".4s">
+                <div class="tp-card tp-border-lightblue">
+                    <div class="tp-img-wrapper">
+                        <!-- Unsplash realistic web development image -->
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Website Development">
+                    </div>
+                    <h3>Websites & Portals</h3>
+                    <p>
+                        High-performance, responsive websites and dynamic web portals built with modern aesthetics to elevate your brand and drive online engagement.
+                    </p>
+                    <a class="btn-plus-custom" href="web-details.html">
+                        <i class="fa fa-plus"></i>
+                        <span>Explore Web</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="tp-process-card">
-                    <div class="tp-process-no">03 / BUILD</div>
-                    <h4>Develop</h4>
-                    <p>Our team develops, integrates, tests and refines the solution with regular feedback.</p>
+
+            <!-- Product 3: Mobile Apps (Dark Blue Accent) -->
+            <div class="col-lg-4 wow fadeInRight" data-wow-delay=".6s">
+                <div class="tp-card tp-border-darkblue">
+                    <div class="tp-img-wrapper">
+                        <!-- Unsplash realistic mobile app image -->
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile Applications">
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>
+                        Feature-rich, native and cross-platform mobile applications designed to deliver seamless, intuitive user experiences across all iOS and Android devices.
+                    </p>
+                    <a class="btn-plus-custom" href="mobile-details.html">
+                        <i class="fa fa-plus"></i>
+                        <span>Explore Mobile</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="tp-process-card">
-                    <div class="tp-process-no">04 / GROW</div>
-                    <h4>Launch & Support</h4>
-                    <p>We launch your solution and provide improvements, maintenance and technical support.</p>
+
+        </div>
+
+        <!-- Additional Business & Creative Service Cards -->
+        <div class="row g-4 mt-4">
+
+            <!-- E-commerce Websites -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="tp-card tp-border-orange">
+                    <div class="tp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="E-commerce Website Development">
+                    </div>
+                    <h3>E-commerce Websites</h3>
+                    <p>
+                        Modern online stores with product catalogues, shopping cart, secure payments, order management,
+                        offers and responsive mobile-first design.
+                    </p>
+                    <a class="btn-plus-custom" href="ecommerce-details.html">
+                        <i class="fa fa-plus"></i>
+                        <span>Explore E-commerce</span>
+                    </a>
                 </div>
             </div>
+
+            <!-- Brochure Printing -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="tp-card tp-border-lightblue">
+                    <div class="tp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="Brochure Printing Services">
+                    </div>
+                    <h3>Brochure Printing</h3>
+                    <p>
+                        Professional brochure design and high-quality printing for businesses, products, services,
+                        events and promotional campaigns.
+                    </p>
+                    <a class="btn-plus-custom" href="brochure-printing.html">
+                        <i class="fa fa-plus"></i>
+                        <span>Explore Printing</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visiting Card Printing -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="tp-card tp-border-darkblue">
+                    <div class="tp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1603796846097-7a2e3b7f0a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="Visiting Card Printing">
+                    </div>
+                    <h3>Visiting Card Printing</h3>
+                    <p>
+                        Premium visiting card design and printing with clean layouts, sharp branding and professional
+                        finishes that make your first impression memorable.
+                    </p>
+                    <a class="btn-plus-custom" href="visiting-card.html">
+                        <i class="fa fa-plus"></i>
+                        <span>View Visiting Cards</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                <div class="tp-card tp-border-orange">
+                    <div class="tp-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="Graphic Design Services">
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>
+                        Creative designs for logos, social media posts, banners, brochures, visiting cards and complete
+                        business branding.
+                    </p>
+                    <a class="btn-plus-custom" href="graphic-design.html">
+                        <i class="fa fa-plus"></i>
+                        <span>Explore Design</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
-
-<script>
-(function () {
-    const buttons = document.querySelectorAll('.tp-filter-btn');
-    const cards = document.querySelectorAll('.tp-service-item');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-            const filter = this.getAttribute('data-filter');
-
-            buttons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            cards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    card.classList.remove('is-hidden');
-                } else {
-                    card.classList.add('is-hidden');
-                }
-            });
-        });
-    });
-})();
-</script>
-
 <section class="overflow-hidden rounded-1 mx-4" style="background-color: #f8f9fa; padding: 60px 0;">
     
     <!-- Embedded Styles for the About Section Theme -->
@@ -2178,7 +1733,7 @@ TechPaltan
                 <div class="spacer-20" style="height: 20px;"></div>
 
                 <p>
-                    TechPaltan helps businesses go digital with custom software, ERP, websites, mobile apps, e-commerce platforms, design and business branding.
+                    Empowering businesses with custom software solutions, scalable ERP systems, and high-performance mobile and web applications tailored for modern digital growth.
                 </p>
 
                 <div class="tp-social-icons mb-sm-30">
@@ -2366,5 +1921,6 @@ TechPaltan
 </body>
 
 
+<!-- Mirrored from madebydesignesia.com/themes/seoly/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 May 2026 05:37:12 GMT -->
 
 </html>
